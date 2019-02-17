@@ -374,3 +374,125 @@ template {
 [hidden] {
   display: none;
 }
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+ul,
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  max-width: 1920px;
+  margin: 0 auto;
+  background-image: linear-gradient(rgba(243, 129, 129, 0.89), rgba(255, 227, 138, 0.9)), url(/images/picture.png);
+  color: #ffffff;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nazva-text {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 80px;
+  margin: 0;
+}
+
+.nazva-heds {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 100px;
+  text-transform: uppercase;
+  padding: 20px 250px 100px 250px;
+  margin: 0;
+}
+
+.header-butt {
+  margin-bottom: 230px;
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 14px 32px;
+  border: 3px solid white;
+  background-color: transparent;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 30px;
+  margin-bottom: 180px;
+}
+
+.nav-logo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.nav-logo__link {
+  color: #ffffff;
+  font-size: 36px;
+}
+
+.nav-logo__link:hover {
+  color: #fce38a;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 51%;
+}
+
+.nav-menu__item {
+  text-align: center;
+  padding: 10px 25px;
+}
+
+.nav-menu__item::after {
+  content: '';
+  width: 75%;
+  height: 3px;
+  background-color: #fce38a;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  opacity: 0;
+}
+
+.nav-menu__item:hover::after {
+  opacity: 1;
+}
+
+.nav-menu__links--hover {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.nav-menu__links--hover:hover {
+  color: #fce38a;
+}
+
+.nav-menu__icon:hover {
+  fill: #fce38a;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .header {
+    background-image: url(/images/picture@2x.png);
+  }
+}

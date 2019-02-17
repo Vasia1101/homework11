@@ -1,0 +1,98 @@
+.header{
+    max-width: 1920px;
+    margin: 0 auto;
+    background-image: linear-gradient(
+        rgba(243, 129, 129, 0.89), 
+        rgba(255, 227, 138, 0.9)
+      ), url(/images/picture.png);
+    color: $tx-col-l;
+    @include pic-center(center,cover,no-repeat);
+    @media (min-resolution: 192dpi) {
+        background-image: url(/images/picture@2x.png);
+        }
+    
+  }
+  .nazva-text{
+    font-family: 'Montserrat', sans-serif;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 80px;
+  margin: 0;
+  }
+  .nazva-heds{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 100px;
+    text-transform: uppercase;
+    padding: 20px 250px 100px 250px;
+    margin: 0;
+  }
+  .header-butt{
+    margin-bottom: 230px;
+      @include text-butt( #ffffff, 16px, uppercase, 14px 32px, 3px solid white, transparent);
+       }
+       .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding-top: 30px;
+        margin-bottom: 180px;
+        
+        }
+        .nav-logo{
+            
+            font-family: 'Montserrat', sans-serif;
+            
+            font-weight: bold;
+            &__link{
+                color: $tx-col-l;
+                font-size: 36px;
+                &:hover{
+                    color: $tx-col-hov;
+                                }         
+            }
+        }
+        .nav-menu{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: $width - 49%;
+             &__item{
+            text-align: center;
+            padding: 10px 25px; 
+            &::after{
+                content: '';
+                width: 75%;
+                height: 3px;
+                background-color: $tx-col-hov;
+                display: block;
+                margin: 0 auto;
+                margin-top: 10px;
+                opacity: 0;
+               
+            }
+            &:hover::after{
+                opacity: 1;
+            }
+            
+
+        }
+        &__links--hover{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            color: $tx-col-l;
+            text-transform: uppercase;
+            &:hover{
+                color: $tx-col-hov;
+            }
+           }
+         &__icon:hover {
+             fill: $tx-col-hov;
+         }
+        }
+        
+        //    .nav-menu__item
+        //    .nav-menu__icon{
+        //        fill:#ffffff;
+        //     }
+           

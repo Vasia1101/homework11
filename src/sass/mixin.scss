@@ -1,0 +1,14 @@
+@mixin text-butt($color, $size, $bigs, $padd, $bord, $back-col ){
+    color:$color;
+    font-size: $size;
+    text-transform: $bigs;
+    padding: $padd;
+    border:$bord;
+    background-color: $back-col;
+}
+@mixin pic-center($bacK-pos, $back-size, $back-rept){
+    background-position: $bacK-pos;
+    background-size: $back-size;
+    background-repeat: $back-rept;
+
+}

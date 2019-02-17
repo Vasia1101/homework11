@@ -1,0 +1,51 @@
+.service-text,
+.team-text{
+    font-family: 'Montserrat', sans-serif;
+font-family: 'Kaushan Script', cursive;
+font-size: 24px;
+margin: 0;
+padding: 50px 0 30px 0;
+}
+.sercice-nazva,
+.team-nazva{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 0;
+}
+.sercice-nazva::after,
+.team-nazva::after{
+@include nazva-risk;
+}
+.service-menu{
+    display: flex;
+    width: $width;
+    flex-wrap: wrap;
+}
+.service-menu__item{
+    display: flex;
+    width: $width - 66.6666%;
+    height: auto;
+    text-align: left;
+    margin-bottom: 100px;
+}
+
+.service-menu__grafa{
+    width: $width - 80%;
+    text-align: left;
+}
+.service-menu__nazva,
+.team-menu__nazva{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0;
+}
+.service-menu__opus,
+.team-menu__job{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+    padding: 10px;
+}

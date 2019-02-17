@@ -1,0 +1,70 @@
+
+.team-opus{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    padding: 20px;    
+}
+.team-menu{
+    @include D-f-c-c;
+    justify-content: space-around;
+    
+}
+.team-item{
+    position: relative;
+    &__image{
+        width: 383px;
+        height: 473px;
+        background-color: #95e1d3;    
+    }
+    &-box{
+        width: 383px;
+        height: 473px;
+        background-image: linear-gradient(
+            rgba(243, 129, 129, 0.7), 
+            rgba(255, 227, 138, 0.7));
+             display: flex;
+            justify-content: center;
+            align-items: center;     
+    }
+    &-share{
+        @include D-f-c-c;
+        &__social-icons{
+            width: 55px;
+            height: 55px;
+            border: 1px solid #f38181;
+            @include D-f-c-c;
+            background-color: $tx-col-hov;
+            
+        }
+        &__icons{
+            fill: #f38181;
+        }
+    }
+}
+
+
+
+
+
+.team-item-share__social-icons:hover,
+.team-item-share__social-icons:hover .team-item-share__icons,
+.team-item-share__social-icons:hover .team-item-box{
+    fill: #ffffff;
+    background-color: #f38181;
+    }
+    .box1{
+        @include box;
+    }
+    .box2{
+        @include box;
+    }
+    .box3{
+        @include box;
+    }
+    .first:hover .box1,
+    .second:hover .box2,
+    .tree:hover .box3 {
+display: flex;
+box-shadow: 11px 11px 0px 1px rgba(149,225,211,1);
+    }
+    
